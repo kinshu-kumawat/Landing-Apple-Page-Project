@@ -1,0 +1,903 @@
+@font-face {
+    font-family: font;
+    src: url(./sf-pro-display_regular.woff2);
+}
+@font-face {
+    font-family: font2;
+    src: url(./sf-pro-text_regular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    font-family: font, -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+#main {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    background-color: #f5f5f7;
+}
+
+
+#top {
+    width: 100%;
+    height: 48px;
+    background-color: rgba(43, 41, 41, 0.92);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 0 16px;
+    transition: all 0.3s ease;
+}
+
+#top > p {
+    color: #e5e5e5;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: font2, -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+#top > p:hover {
+    color: #ffffff;
+}
+
+#top > p i {
+    font-size: 16px;
+}
+
+
+#second {
+    width: 100%;
+    min-height: 650px;
+    background-color: black;
+    padding: 85px 20px 40px;
+    background-image: url(https://www.apple.com/v/home/ch/images/heroes/iphone-17-pro/hero_iphone_17_pro__bknyzxfk2agi_medium.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;   
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#second > h1 {
+    color: white;
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(34px, 5vw, 55px);
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 0;
+}
+
+#second > h4 {
+    color: #e5e5e5;
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(20px, 3vw, 28px);
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+#but {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+
+#but > button {
+    background-color: rgb(32, 122, 233);
+    color: white;
+    padding: 9px 22px;
+    border-radius: 980px;
+    width: auto;
+    min-width: 90px;
+    font-weight: 400;
+    border: 1px solid rgb(32, 122, 233);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+#but > button:hover {
+    color: rgb(32, 122, 233);  
+    background-color: black;
+    border-color: rgb(32, 122, 233);
+}
+
+/* ==========================================================
+   HERO 2: iPhone Air
+   ========================================================== */
+#box2 {
+    width: 100%;
+    min-height: 640px;
+    background-color: whitesmoke;
+    margin-top: 12px;
+    padding: 60px 20px 40px;
+    background-image: url(https://www.apple.com/v/home/ch/images/heroes/iphone-air/hero_iphone_air__0gxyavihpiqu_medium.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#box2 > h2 {
+    color: black;
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(34px, 5vw, 50px);
+    font-weight: 600;
+    margin: 0;
+}
+
+#box2 > h4 {
+    color: #1d1d1f;
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(16px, 2.5vw, 20px);
+    font-weight: 400;
+    margin-top: 8px;
+    line-height: 1.35;
+}
+
+#but2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+
+#but2 > button {
+    background-color: rgb(32, 122, 233);
+    color: white;
+    padding: 9px 22px;
+    border-radius: 980px;
+    width: auto;
+    min-width: 90px;
+    font-weight: 400;
+    border: 1px solid rgb(32, 122, 233);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+#but2 > button:hover {
+    color: rgb(32, 122, 233);  
+    background-color: whitesmoke;
+    border-color: rgb(32, 122, 233);
+}
+
+
+#box3 {
+    width: 100%;
+    min-height: 640px;
+    background-color: whitesmoke;
+    margin-top: 12px;
+    padding: 60px 20px 40px;
+    background-image: url(https://www.apple.com/v/home/ch/images/heroes/iphone-17/hero_iphone_17__c5vvimu9a20y_medium.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#box3 > h2 {
+    color: black;
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(34px, 5vw, 50px);
+    font-weight: 600;
+    margin: 0;
+}
+
+#box3 > h4 {
+    color: #1d1d1f;
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(18px, 2.8vw, 25px);
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+#stop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 18px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#stop > button {
+    background-color: rgb(32, 122, 233);
+    color: white;
+    padding: 9px 22px;
+    border-radius: 980px;
+    width: auto;
+    min-width: 90px;
+    font-weight: 400;
+    border: 1px solid rgb(32, 122, 233);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+#stop > button:hover {
+    color: rgb(32, 122, 233);  
+    background-color: whitesmoke;
+    border-color: rgb(32, 122, 233);
+}
+
+
+#box4 {
+    display: flex;
+    width: 100%;
+    margin-top: 12px;
+    gap: 12px;
+    padding: 0 12px;
+}
+
+#main1 {
+    width: 50%;
+    min-height: 580px;
+    padding: 60px 20px 40px;
+    background-color: whitesmoke;
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/apple-watch-series-11/promo_apple_watch_series_11__b63hxviqvonm_medium.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#main1 > #text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: black;
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 700;
+    flex-wrap: wrap;
+}
+
+#main1 > #text > p {
+    color: black;
+    display: inline-flex;
+    align-items: center;
+}
+
+#main1 > #text2 {
+    margin-top: 8px;
+}
+
+#main1 > #text2 > p {
+    color: #1d1d1f;
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(14px, 1.8vw, 18px);
+    line-height: 1.35;
+}
+
+#option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+#option > button {
+    background-color: rgb(32, 122, 233);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 980px;
+    width: auto;
+    min-width: 85px;
+    font-weight: 400;
+    border: 1px solid rgb(32, 122, 233);
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+#option > button:hover {
+    color: rgb(32, 122, 233);  
+    background-color: whitesmoke;
+    border-color: rgb(32, 122, 233);
+}
+
+#main2 {
+    width: 50%;
+    min-height: 580px;
+    padding: 60px 20px 40px;
+    background-color: whitesmoke;
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/airpods-pro-3/promo_airpodspro_3__f6xmza7bglei_medium.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#main2 > #text > h4 {
+    color: black;
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 700;
+}
+
+#main2 > #text > p {
+    color: #1d1d1f;
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(14px, 1.8vw, 17px);
+    margin-top: 8px;
+    line-height: 1.35;
+}
+
+#option1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+#option1 > button {
+    background-color: rgb(32, 122, 233);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 980px;
+    width: auto;
+    min-width: 85px;
+    font-weight: 400;
+    border: 1px solid rgb(32, 122, 233);
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+#option1 > button:hover {
+    color: rgb(32, 122, 233);  
+    background-color: whitesmoke;
+    border-color: rgb(32, 122, 233);
+}
+
+
+#box5 {
+    width: 100%;
+    margin-top: 12px;
+    gap: 12px;
+    padding: 0 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "aside section";
+}
+
+aside {
+    grid-area: aside;
+    background-color: whitesmoke;
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/macbook-air/promo_macbook_air__fqowrtnxewqe_medium.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    min-height: 580px;
+    padding: 60px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+aside > h4 {
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(26px, 3.2vw, 38px);
+    font-weight: 600;
+    color: black;
+    margin: 0;
+}
+
+aside > p {
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(14px, 1.8vw, 17px);
+    color: #1d1d1f;
+    margin-top: 8px;
+    line-height: 1.35;
+}
+
+#click1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+#click1 > button {
+    background-color: rgb(32, 122, 233);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 980px;
+    width: auto;
+    min-width: 85px;
+    font-weight: 400;
+    border: 1px solid rgb(32, 122, 233);
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+#click1 > button:hover {
+    color: rgb(32, 122, 233);  
+    background-color: whitesmoke;
+    border-color: rgb(32, 122, 233);
+}
+
+section {
+    grid-area: section;
+    background-color: whitesmoke;
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/ipad-air/promo_ipad_air_avail__6i02t7nujr62_medium.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    min-height: 580px;
+    padding: 60px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+section > h4 {
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(26px, 3.2vw, 38px);
+    font-weight: 600;
+    color: black;
+    margin: 0;
+    transform: translateX(-24px);
+}
+
+section > #font {
+    margin-top: -34px;
+    transform: translateX(45px);
+}
+
+section > #font > h5 {
+    color: #1e73be;
+    font-style: italic;
+    font-family: "Segoe Script", "Brush Script MT", cursive;
+    font-size: clamp(24px, 3vw, 34px);
+    margin: 0;
+    line-height: 1;
+}
+
+section > p {
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(14px, 1.8vw, 17px);
+    color: #1d1d1f;
+    margin-top: 12px;
+    line-height: 1.35;
+}
+
+#click2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+#click2 > button {
+    background-color: rgb(32, 122, 233);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 980px;
+    width: auto;
+    min-width: 85px;
+    font-weight: 400;
+    border: 1px solid rgb(32, 122, 233);
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+#click2 > button:hover {
+    color: rgb(32, 122, 233);  
+    background-color: whitesmoke;
+    border-color: rgb(32, 122, 233);
+}
+
+
+#box6 {
+    width: 100%;
+    margin-top: 12px;
+    gap: 12px;
+    padding: 0 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header footer";
+}
+
+#box6 > header {
+    grid-area: header;
+    background-color: whitesmoke;
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_medium.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    min-height: 580px;
+    padding: 60px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#box6 > header > #text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: black;
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(24px, 3.2vw, 36px);
+    font-weight: 600;
+}
+
+#box6 > header > #text > p {
+    color: black;
+    display: inline-flex;
+    align-items: center;
+}
+
+#box6 > header > #text2 {
+    margin-top: 8px;
+}
+
+#box6 > header > #text2 > p {
+    color: #1d1d1f;
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(14px, 1.8vw, 17px);
+    line-height: 1.35;
+    text-align: center;
+    position: static;
+    margin: 0;
+}
+
+#submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+#submit > button {
+    background-color: rgb(32, 122, 233);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 980px;
+    width: auto;
+    min-width: 130px;
+    font-weight: 400;
+    border: 1px solid rgb(32, 122, 233);
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+#submit > button:hover {
+    color: rgb(32, 122, 233);  
+    background-color: whitesmoke;
+    border-color: rgb(32, 122, 233);
+}
+
+#box6 > footer {
+    grid-area: footer;
+    background-color: whitesmoke;
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/apple-card/promo_apple_card__5cm7draujpey_medium.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    min-height: 580px;
+    padding: 60px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#box6 > footer > #logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: black;
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(24px, 3.2vw, 36px);
+    font-weight: 600;
+}
+
+#box6 > footer > #logo > p {
+    color: black;
+    display: inline-flex;
+    align-items: center;
+}
+
+#box6 > footer > #font {
+    margin-top: 8px;
+}
+
+#box6 > footer > #font > p {
+    color: #1d1d1f;
+    font-family: font, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(14px, 1.8vw, 17px);
+    line-height: 1.35;
+    text-align: center;
+    margin: 0;
+}
+
+#button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+#button > button {
+    background-color: rgb(32, 122, 233);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 980px;
+    width: auto;
+    min-width: 85px;
+    font-weight: 400;
+    border: 1px solid rgb(32, 122, 233);
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+#button > button:hover {
+    color: rgb(32, 122, 233);  
+    background-color: whitesmoke;
+    border-color: rgb(32, 122, 233);
+}
+
+
+#box7 {
+    width: 100%;
+    background-color: #f5f5f7;
+    font-family: font2, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+    color: #6e6e73;
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 24px 0 36px;
+    margin-top: 12px;
+}
+
+#words {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: left;
+    color: #6e6e73;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+#words p {
+    color: #86868b;
+    margin-bottom: 8px;
+}
+
+#words2 {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+#line1, #line2 {
+    width: 100%;
+    height: 1px;
+    background-color: #d2d2d7;
+    margin: 14px 0;
+}
+
+#alpa {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    font-size: 12px;
+    line-height: 1.8;
+    padding: 10px 0;
+}
+
+#alpa h4 {
+    color: #1d1d1f;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+#alpa p {
+    color: #515154;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+#alpa p:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+#letter, #letter1, #letter2, #letter3, #letter4 {
+    padding: 0;
+}
+
+#alpa2 {
+    color: #86868b;
+    font-size: 12px;
+    margin: 12px 0;
+}
+
+#alpa2 p {
+    color: #86868b;
+}
+
+#copy {
+    color: #86868b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    font-size: 11px;
+    flex-wrap: wrap;
+}
+
+#copy p {
+    color: #86868b;
+}
+
+
+@media (max-width: 992px) {
+    #top {
+        gap: 20px;
+    }
+    #alpa {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Top Bar Mobile Scrolling */
+    #top {
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 20px;
+        padding: 0 16px;
+    }
+    #top::-webkit-scrollbar {
+        display: none;
+    }
+    #top > p {
+        font-size: 12px;
+        flex-shrink: 0;
+    }
+
+    /* Hero adjustments */
+    #second {
+        min-height: 520px;
+        padding: 75px 15px 30px;
+        background-size: 88% auto;
+    }
+    #box2, #box3 {
+        min-height: 500px;
+        padding: 45px 15px 30px;
+    }
+
+    /* Grids to 1-column stack */
+    #box4 {
+        flex-direction: column;
+        padding: 0;
+        gap: 12px;
+    }
+    #main1, #main2 {
+        width: 100%;
+        min-height: 480px;
+        padding: 45px 15px 30px;
+    }
+
+    #box5 {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "aside"
+            "section";
+        padding: 0;
+        gap: 12px;
+    }
+    aside, section {
+        min-height: 480px;
+        padding: 45px 15px 30px;
+    }
+
+    #box6 {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "footer";
+        padding: 0;
+        gap: 12px;
+    }
+    #box6 > header, #box6 > footer {
+        min-height: 480px;
+        padding: 45px 15px 30px;
+    }
+}
+
+@media (max-width: 520px) {
+    #second {
+        min-height: 460px;
+        padding-top: 70px;
+    }
+    #box2, #box3, #main1, #main2, aside, section, #box6 > header, #box6 > footer {
+        min-height: 450px;
+        padding-top: 40px;
+    }
+    #alpa {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    #copy {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
